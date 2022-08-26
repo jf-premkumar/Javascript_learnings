@@ -30,3 +30,17 @@ const consec = toString(txt);
 // console.log(confir);  
 console.log(`value : ${consec}, type: ${typeof consec}`);
 
+// String - Methods
+
+// 1) String.prototype[@@iterator]()  : 
+const txtRn = "Premkumar is going to home";
+const iterator = txtRn[Symbol.iterator]();
+let itemChar = iterator.next();
+
+while(!itemChar.done && itemChar.value !== ' '){
+    console.log(itemChar.value);
+    itemChar = iterator.next();
+}
+
+
+
