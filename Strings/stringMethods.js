@@ -42,5 +42,9 @@ while(!itemChar.done && itemChar.value !== ' '){
     itemChar = iterator.next();
 }
 
-
+// 2) String.prototype.at() : 
+let name = 'Akash', ind = 2;
+console.log(`string value at ${ind} : ${name.at(ind)}`);
+ind = -1;
+console.log(`string value at ${ind} : ${name.at(ind)}`);   // returns last character of string
 
