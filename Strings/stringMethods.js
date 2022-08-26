@@ -48,3 +48,13 @@ console.log(`string value at ${ind} : ${name.at(ind)}`);
 ind = -1;
 console.log(`string value at ${ind} : ${name.at(ind)}`);   // returns last character of string
 
+// 3) String.prototype.charAt()
+let animal = 'mouse';
+console.log(`Character at index: ${3} is ${animal.charAt(3)}`)
+
+// 4) String.prototype.charCodeAt()
+console.log(`Character at index: ${3} is ${animal.charCodeAt(3)}`)
+
+// 5) String.prototype.codePointAt()
+const icons = '☃★♲';
+console.log('code point at index 1 is' , icons.codePointAt(1))
