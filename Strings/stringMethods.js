@@ -85,7 +85,7 @@ console.log(paragraph.indexOf('Premkumar'));
 // 12) String.prototype.lastIndexOf()
 console.log(paragraph.lastIndexOf('Premkumar'));
 
-// 13) String.prototype.lastIndexOf()
+// 13) String.prototype.localeCompare()
 const a = 'réservé'; // with accents, lowercase
 const b = 'RESERVE'; // no accents, uppercase
 
@@ -128,3 +128,12 @@ console.log(`nameNFC1: ${nameNFC1} nameNFC2: ${nameNFC2}`);
 console.log(nameNFC1 === nameNFC2)
 console.log(nameNFC1.length == nameNFC2.length)
 
+// 17) String.prototype.padEnd()
+const newLine = 'All is well';
+const paddedLine = newLine.padEnd(20, ' * ');
+console.log(`paddedLine : ${paddedLine} length got: ${paddedLine.length}`);
+
+// 18) String.prototype.padStart()
+const newStr = 'well';
+const padedStr = newStr.padStart(10, '₹ ');
+console.log(`padedStr : ${padedStr} length got: ${padedStr.length}`);
