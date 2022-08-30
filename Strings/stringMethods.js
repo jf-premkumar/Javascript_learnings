@@ -224,3 +224,37 @@ console.log(`doc1: ${doc1}`);
 
 console.log('-----------------------------------------------------------');
 
+// 20) String.prototype.repeat()
+const rep = 'Prem is running ';
+const finalCopy = `The result i want is: ${rep.repeat(5)}`;
+console.log(finalCopy)
+
+console.log('-----------------------------------------------------------');
+
+// 21) String.prototype.replace()
+const p = 'The quick brown yellow monkey is riding bycycle, monkey is running for oranges';
+const rgx = /Monkey/i;
+const rgx1 = /Monkey/gi;
+console.log(p.replace(rgx, 'horse'));
+console.log(p.replace(rgx1, 'horse'));  //  for global changes
+
+console.log('-----------------------------------------------------------');
+
+// 22) String.prototype.replaceAll()
+const p2 = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+const resP2 = p2.replaceAll('dog', 'horse');
+const resP3 = p2.replaceAll(/The/ig, 'A');
+console.log(`replace all result2: ${resP2}`)
+console.log(`replace all result3: ${resP3}`)
+console.log('aabbbcc'.replaceAll('b', '.'));
+console.log('aabbbcc'.replaceAll(/B/ig, '.'));  // must user global flag
+console.log('xxxx'.replaceAll('', '_'));   // if specified string is empty then replacement happen inbetween for each character
+
+console.log('-----------------------------------------------------------');
+
+// 23) String.prototype.search()
+const para = 'Please help me to search Mr.Premkumar';
+console.log('search result ', para.search('me'));  // returns index
+console.log('search result ', para.search('pre'));  // returns -1 if no match
+
+console.log('-----------------------------------------------------------');
