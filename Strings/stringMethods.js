@@ -258,3 +258,32 @@ console.log('search result ', para.search('me'));  // returns index
 console.log('search result ', para.search('pre'));  // returns -1 if no match
 
 console.log('-----------------------------------------------------------');
+
+// 24) String.prototype.slice()
+const st = 'The quick brown fox jumps over the lazy dog.';
+console.log(st.slice(4));
+console.log(st.slice(4, 9));
+console.log(st.slice(-4));
+console.log(st.slice(-9, -1));
+
+console.log('-----------------------------------------------------------');
+
+// 25) String.prototype.split()
+const source = 'Prem is a good boy';
+console.log(source.split(' '))
+console.log(source.split(''))
+console.log(source.split())
+
+console.log('-----------------------------------------------------------');
+
+// 26) String.prototype.startsWith()
+console.log(source.startsWith('Pre'));
+console.log(source.startsWith('Pre', 5));  // 5 - postition at search starts
+
+console.log('-----------------------------------------------------------');
+
+// 27) String.prototype.substring()
+const main = 'Mozill firefox';
+console.log(main.substring(0, 6))
+console.log(main.substring(7, 2))
+
