@@ -287,3 +287,32 @@ const main = 'Mozill firefox';
 console.log(main.substring(0, 6))
 console.log(main.substring(7, 2))
 
+console.log('-----------------------------------------------------------');
+
+// 28) String.prototype.toLocaleLowerCase() 
+const  dotted = 'İstanbul';
+console.log(`EN-US: ${dotted.toLocaleLowerCase('en-US')}`)
+console.log(`EN-US: ${dotted.toLocaleLowerCase('tr')}`)
+
+console.log('-----------------------------------------------------------');
+
+// 28) ring.prototype.toLocaleUpperCase() 
+console.log(`EN-US: ${dotted.toLocaleUpperCase('en-US')}`)
+console.log(`EN-US: ${dotted.toLocaleUpperCase('TR')}`)
+
+console.log('-----------------------------------------------------------');
+
+// 29) String.prototype.toLowerCase()
+const one = 'Hi Hello everyOne, my name is premkumar';
+console.log(`In lower case: ${one.toLowerCase()}`);
+
+console.log('-----------------------------------------------------------');
+
+// 30) String.prototype.toString()
+const strObj = new String('foo');
+console.log(strObj);
+console.log(`Specified string: ${strObj.toString()}`);
+
+const strObj2 = new String('HELLO WORLD');
+console.log(strObj2);
+console.log(`Specified string: ${strObj2.toString()}`);
