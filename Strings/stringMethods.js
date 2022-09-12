@@ -316,3 +316,8 @@ console.log(`Specified string: ${strObj.toString()}`);
 const strObj2 = new String('HELLO WORLD');
 console.log(strObj2);
 console.log(`Specified string: ${strObj2.toString()}`);
+
+console.log('-----------------------------------------------------------');
+
+const sent = `I'm specialized in HR management & Industrial relations. I'm looking for MT in HR Generalist roles specialized with Statutory Compliances, Labour Law, Employee Relations, Talent Acquisition, Employee Welfare, and Personnel Management aspects.`;
+console.log( sent.replaceAll(`'`, `\'`));
